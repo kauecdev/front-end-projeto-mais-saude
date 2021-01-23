@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <title>+Saúde - Cadastro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cadastro-cliente.css" type="text/CSS">
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="topo">
+                <div id="logo_principal">
+                    <img src="images/LogoSaude1.png" alt="">
+                </div>
+                <h1 id="slogan">Cada detalhe da vida em suas mãos</h1>
+                <div class="clear"></div>
+            </div>
+
+            <div id="corpo">
+                <div id="campo-cadastro">
+                    <h1>Crie sua conta gratuita!</h1>
+                    <form action="">
+                        <label for="nome">Nome Completo:</label>
+                        <input class="texto" name="nome" type="text" placeholder="Digite seu nome aqui"/>
+
+                        <label for="CPF">CPF:</label>
+                        <input class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
+
+                        <label for="DataNasc">Data de Nascimento:</label>
+                        <input id="DataNasc" name="DataNasc" type="date"/>
+
+                        <label for="Sexo">Sexo:</label><br>
+                        <input class="Sexo" name="Sexo" value="Masculino" type="radio" />
+                        <label class="Sexo" for="Sexo">Masculino</label>
+                        <input class="Sexo" name="Sexo" value="Feminino" type="radio" />
+                        <label class="Sexo" for="Sexo">Feminino</label><br>
+
+                        <label for="Endereço">Endereço:</label><br>
+                        <label for="Rua">Rua:</label>
+                        <input class="texto" name="Rua" type="text" placeholder="ex. Avenida Brasil"/>
+                        <label class="endereco" for="Numero">Número :</label>
+                        <label class="endereco" for="CEP">CEP :</label><br>
+                        <input id="numero" name="Numero" type="text" placeholder="ex. 282"/>
+                        <input id="CEP" name="CEP" type="text" placeholder="ex. 65630000"/>
+
+                        <label for="Convenio">Convênio:</label>
+                        <input class="texto" name="Convenio" type="text" placeholder="Digite seu convênio aqui"/>
+
+                        <label for="email">Email:</label>
+                        <input class="texto" name="email" type="email" placeholder="exemplo@dominio.com"/>
+
+                        <label for="senha">Senha:</label>
+                        <input class="texto" name="senha" type="password" placeholder="digite sua senha aqui"/>
+
+                        <label for="senha">Confirmar senha:</label>
+                        <input class="texto" name="senha" type="password" placeholder="digite sua senha novamente"/>
+
+                        <input class="botao" type="submit" value="Cadastrar">
+                        <div class="clear"></div>
+                    </form> 
+                </div>
+               
+               
+            </div>
+                
+                <div class="clear"></div>
+
+            <div id="rodape">
+                <h2>&copy Copyright 2021 SetCode Ready</h2>
+            </div>
+
+        </div>
+        
+        
+
+    </body>
+
+</html>
