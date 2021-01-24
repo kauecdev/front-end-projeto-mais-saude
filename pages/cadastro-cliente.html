@@ -4,21 +4,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/cadastro-cliente.css" type="text/css">
+        <link rel="stylesheet" href="../css/cadastro-cliente.css" type="text/css">
+
+        <script src="https://kit.fontawesome.com/783ffd8559.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
         <title>+Saúde - Cadastro</title>
     </head>
 
     <body>
+
+        <header id="topo">
+            <a href="../index.html">
+                <img src="../img/Logo_+Saude.png" alt="logo" id="logo_principal">
+            </a>
+
+            <h3 id="slogan">Cada detalhe da vida em suas mãos</h3>
+        </header>
+
         <div id="container">
 
-            <div id="topo">
-                <div id="logo_principal">
-                    <img src="images/LogoSaude1.png" alt="">
-                </div>
-                <h1 id="slogan">Cada detalhe da vida em suas mãos</h1>
-                <div class="clear"></div>
-            </div>
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
 
             <div id="corpo">
                 <div id="campo-cadastro">
@@ -59,15 +69,16 @@
                         <label for="senha">Confirmar senha:</label>
                         <input class="texto" name="senha" type="password" placeholder="digite sua senha novamente"/>
 
-                        <input class="botao" type="submit" value="Cadastrar">
-                        <div class="clear"></div>
+                        <div class="container-buttons">
+                            <button class="botao botao-cancelar" type="submit">Cancelar</button>
+                            <button class="botao botao-cadastrar" type="submit">Cadastrar</button>
+                        </div>
                     </form> 
                 </div>
                
                
             </div>
                 
-                <div class="clear"></div>
 
             <div id="rodape">
                 <h2>&copy Copyright 2021 SetCode Ready</h2>

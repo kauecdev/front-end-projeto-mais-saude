@@ -1,45 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
     font-family: Nunito;
     font-style: normal;
 }
-#container{
-    width: 100%;
-}
+
 #topo{
     background-color: #DF1F1F;
     width: 100%;
-    height: 7.68%;
-    left: 0;
-    top: 0;
-}
 
-
-#logo_principal{
-    width: 339;
-    height: 100.04px;
-    background: #DF1F1F;
-    float: left;
-}
-
-#slogan{
-    background-color: #DF1F1F;
-    float: right;
-    padding: 30px;
-    color: #FFFFFF;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+#topo a {
+    width: 16%;
+    height: 16%;
+
+    padding-left: 20px;
+    background-color: #DF1F1F;
+}
+
+#topo a img {
+    width: 100%;
+    height: 100%;
+}
+
+#topo #slogan{
+    width: 84%;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 26px;
+
+    text-align: right;
+    padding-right: 20px;
+
+    background-color: #DF1F1F;
+}
+
+#container{
+    width: 100%;
+    position: relative;
+}
+
+#container > a {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+#container > a i {
+    color: #DF1F1F;
+    font-size: 40px;
+}
 
 .clear{
 clear: both;
@@ -75,6 +91,7 @@ clear: both;
     border-radius: 30px;
     width: 80%;
     height: 2%;
+    padding: 20px 0;
     margin: 0 10% 0 10%;
     background-color: #DF1F1F;
 }
@@ -141,19 +158,41 @@ clear: both;
     margin: 0px 42px 10px 0px;
 }
 
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DF1F1F;
+
+    margin: 20px 0;
+}
+
 .botao{
-    padding: 16px 75px 16px 75px;
-    left: 55px;
-    top: 518px;
-    background: #32A492;
+    width: 40%;
+
     border-radius: 15px; 
-    float: right;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
     border: none;
-    margin: 20px -15px 20px 0px;
+
+    padding: 16px 20px;
+    cursor: pointer;
+    
+    transition: opacity 0.2s;
 }
+
+.botao:hover {
+    opacity: 0.7;
+}
+
+.botao-cancelar {
+    background: #960B0B;
+}
+
+.botao-cadastrar {
+    background: #32A492;
+}
+
 
 #rodape{
     background-color: #DF1F1F;
