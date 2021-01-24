@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Nunito;
+    font-style: normal;
+}
+
+#topo{
+    background-color: #DF1F1F;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topo a {
+    width: 16%;
+    height: 16%;
+
+    padding-left: 20px;
+    background-color: #DF1F1F;
+}
+
+#topo a img {
+    width: 100%;
+    height: 100%;
+}
+
+#topo #slogan{
+    width: 84%;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 26px;
+
+    text-align: right;
+    padding-right: 20px;
+
+    background-color: #DF1F1F;
+}
+
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+
+    padding-bottom: 30px;
+
+    display: flex;
+}
+
+#lateral_esquerda{
+    width: 40%;
+    
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+#lateral_esquerda #textoDeEntrada {
+    width: 80%;
+    text-align: left;
+
+    color: #32A492;
+}
+
+#lateral_esquerda #textoDeEntrada h1 {
+    font-size: 70px;
+    font-weight: 700;
+
+    line-height: 80px;
+}
+
+#lateral_esquerda #textoDeEntrada h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+#lateral_esquerda .botoes_entrada {
+    display: flex;
+    flex-direction: column;
+}
+
+#lateral_esquerda .botoes_entrada a {
+    background: #32A492;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+
+    width: 180px;
+    height: 60px;
+
+    border: none;
+    text-decoration: none;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s;
+}
+
+#lateral_esquerda .botoes_entrada a:hover {
+    opacity: 0.9;
+}
+
+#lateral_direita{
+    width: 60%;
+
+    text-align: center;
+    margin: 4%;
+}
+
+#lateral_direita img{
+    width: 90%;
+}
+
+#rodape{
+    background-color: #DF1F1F;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    text-align: right;
+}
+
+#rodape h2{
+    padding: 10px;
+    background-color: #DF1F1F;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 44px;
+    color: #FFFFFF;
+}

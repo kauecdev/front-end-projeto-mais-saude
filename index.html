@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="pt-br">
 
     <head>
-        <title>+Saúde - Inicio</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="home.css" type="text/CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="./css/home.css" type="text/css">
+
+        <title>+Saúde - Home</title>
     </head>
 
     <body>
-        <div id="container">
+        <header id="topo">
+            <a href="./index.html">
+                <img src="./img/Logo_+Saúde.png" alt="logo" id="logo_principal">
+            </a>
 
-            <div id="topo">
-                <img src="images/LogoSaude1.png" alt="" id="logo_principal">
-                <h1 id="slogan">Cada detalhe da vida em suas mãos</h1>
-                <div class="clear"></div>
-            </div>
+            <h3 id="slogan">Cada detalhe da vida em suas mãos</h3>
+        </header>
 
-            <div id="corpo">
+        <main id="container">
 
-                <div id="lateral_esquerda">
-                    <div id="textoDeEntrada">
-                        <img src="images/TextoHome.png" alt="">
-                    </div>
-    
-                    <div class="botoes_entrada">
-                        <button><h1>Paciente</h1></button>
-                    </div>
-
-                    <div class="botoes_entrada">
-                        <button><h1>Médico</h1></button>
-                    </div>
+            <div id="lateral_esquerda">
+                <div id="textoDeEntrada">
+                    <h1>Olá</h1>
+                    <h2>Escolha uma opção para entrar:</h2>
                 </div>
 
-                <div id="lateral_direita">
-                    <img src="images/EquipeMedicaCartoon.png" alt="">
+                <div class="botoes_entrada">
+                    <a href="#">Paciente</a>
+                    <a href="#">Médico</a>
                 </div>
 
-                <div class="clear"></div>
-               
             </div>
+
+            <div id="lateral_direita">
+                <img src="./img/EquipeMedicaCartoon.png" alt="equipe médica">
+            </div>
+           
+        </main>
+
+        <footer id="rodape">
+            <h2>&copy Copyright 2021 SetCode Ready</h2>
+        </footer>
                 
-                <div class="clear"></div>
-
-            <div id="rodape">
-                <h2>&copy Copyright 2021 SetCode Ready</h2>
-            </div>
-
-        </div>
         
-        
-
     </body>
 
 </html>
