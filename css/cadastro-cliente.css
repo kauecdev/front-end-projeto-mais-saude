@@ -170,7 +170,6 @@
     font-size: 1.1rem;
     border: none;
 
-    padding: 16px 20px;
     cursor: pointer;
     
     transition: opacity 0.2s;
@@ -182,10 +181,17 @@
 
 .botao-cancelar {
     background: #960B0B;
+    text-decoration: none;
+    text-align: center;
+
+    max-width: 130px;
+    
+    padding: 16px 20px;
 }
 
 .botao-cadastrar {
     background: #32A492;
+    padding: 16px 20px;
 }
 
 

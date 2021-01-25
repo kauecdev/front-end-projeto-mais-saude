@@ -6,18 +6,6 @@
     color: #ffffff;
 }
 
-.clear{
-    clear: both;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 #topo{
     background-color: #DF1F1F;
     width: 100%;
@@ -53,57 +41,84 @@ main{
     background-color: #DF1F1F;
 }
 
-main section#home-body{
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+main section#home-body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 80vh;
+    height: 100%;
 
-    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-main section#home-body > a {
+main > a {
     position: absolute;
     top: 40px;
     left: 50px;
 }
 
-main section#home-body > a i {
+main > a i {
     color: #DF1F1F;
     font-size: 40px;
 }
 
 main section#home-body form#home-form{
     margin-top: 1.25%;
+
     min-height: 500px;
     min-width: 350px;
+
     border-radius: 30px;
+
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+
+    padding-bottom: 20px;
+
     width: 30%;
-    background-color: #df1f1f;
     height: 50%;
-}
-main section#home-body form#home-form div#form-body_inp_lab{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 60%;
+    background-color: #df1f1f;
 }
 
 main section#home-body form#home-form h1{
     margin-top: 10%;
-    margin-bottom: 5%;
     font-size: 40px;
+    padding-bottom: 40px;
 }
+
+main section#home-body form#home-form div#form-body_inp_lab{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
 
 main section#home-body form#home-form div#form-body_inp_lab label{
     padding: 1.25%;
+}
+
+main section#home-body form#home-form div#form-body_inp_lab label.forgot-password {
+    cursor: pointer;
+}
+
+main section#home-body form#home-form div#form-body_inp_lab label.forgot-password:hover {
+    text-decoration: underline;
 }
 
 main section#home-body form#home-form div#form-body_inp_lab input{
@@ -111,18 +126,20 @@ main section#home-body form#home-form div#form-body_inp_lab input{
     width: 100%;
     border-radius: 14px;
     border: 0;
+
+    color: #000;
 }
+
 main section#home-body form#home-form div#form-body_bottom{
     width: 100%;
     height: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -30%;
 }
 
 main section#home-body form#home-form button#btn1{
-    margin-top: 2%;
+    margin-top: 8%;
     width: 70%;
     border: 0;
     padding: 5%;
@@ -163,12 +180,12 @@ main section#home-body form#home-form a#btn2:hover {
 }
 
 #rodape{
-    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+
     background-color: #DF1F1F;
     width: 100%;
     height: 50px;
-    left: 0px;
-    top: 0px;
     text-align: right;
 }
 

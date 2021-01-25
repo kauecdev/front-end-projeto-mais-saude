@@ -25,21 +25,24 @@
 
     <main>
 
+        <a href="../index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+
         <section id="home-body">
 
-            <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
 
             <form id="home-form">
                 <h1>Acesse sua conta!</h1>
+
                 <div id="form-body_inp_lab">    
                     <label>E-mail:</label>
-                    <input type="email" name="nome"/>
+                    <input type="email" name="nome" placeholder="usuario@mail.com"/>
                     <label>Senha:</label>
-                    <input type="password" name="email"/>
-                    <label>Esqueceu sua senha?</label>
+                    <input type="password" name="senha" placeholder="******"/>
+                    <label class="forgot-password">Esqueceu sua senha?</label>
                 </div>
+
                 <div id="form-body_bottom">
                     <button id="btn1">Entrar</button>
                     <label id="label-bottom">Não é cadastrado?</label>
@@ -47,13 +50,13 @@
                 </div>
             </form>
         </section>
-
-
+        
+        <div id="rodape">
+            <h2>&copy Copyright 2021 SetCode Ready</h2>
+        </div>
+        
     </main>
 
-    <div id="rodape">
-        <h2>&copy Copyright 2021 SetCode Ready</h2>
-    </div>
     
 </body>
 </html>
