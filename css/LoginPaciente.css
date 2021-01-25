@@ -6,6 +6,11 @@
     color: #ffffff;
 }
 
+
+input:focus {
+    outline: 0;
+}
+
 #topo{
     background-color: #DF1F1F;
     width: 100%;
@@ -63,7 +68,6 @@ main section#home-body {
     height: 100%;
 
     padding-bottom: 30px;
-    margin-bottom: 30px;
 }
 
 main > a {
@@ -180,12 +184,9 @@ main section#home-body form#home-form a#btn2:hover {
 }
 
 #rodape{
-    position: absolute;
-    bottom: 0;
-
     background-color: #DF1F1F;
     width: 100%;
-    height: 50px;
+    padding: 2px;
     text-align: right;
 }
 
