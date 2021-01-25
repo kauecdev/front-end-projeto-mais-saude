@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-        <title>+Saúde - Cadastro</title>
+        <title>Cadastro - Paciente</title>
     </head>
 
     <body>
@@ -36,40 +36,63 @@
                 <div id="campo-cadastro">
                     <h1>Crie sua conta gratuita!</h1>
                     <form action="">
-                        <label for="nome">Nome Completo:</label>
-                        <input class="texto" name="nome" type="text" placeholder="Digite seu nome aqui"/>
 
-                        <label for="CPF">CPF:</label>
-                        <input class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
+                        <fieldset>
+                            <label for="nome">Nome Completo:</label>
+                            <input class="texto" name="nome" type="text" placeholder="Digite seu nome aqui"/>
+                        </fieldset>
 
-                        <label for="DataNasc">Data de Nascimento:</label>
-                        <input id="DataNasc" name="DataNasc" type="date"/>
+                        <fieldset>
+                            <label for="CPF">CPF:</label>
+                            <input class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
+                        </fieldset>
 
-                        <label for="Sexo">Sexo:</label><br>
-                        <input class="Sexo" name="Sexo" value="Masculino" type="radio" />
-                        <label class="Sexo" for="Sexo">Masculino</label>
-                        <input class="Sexo" name="Sexo" value="Feminino" type="radio" />
-                        <label class="Sexo" for="Sexo">Feminino</label><br>
+                        <fieldset>
+                            <label for="DataNasc">Data de Nascimento:</label>
+                            <input id="DataNasc" name="DataNasc" type="date"/>
+                        </fieldset>
 
-                        <label for="Endereço">Endereço:</label><br>
-                        <label for="Rua">Rua:</label>
-                        <input class="texto" name="Rua" type="text" placeholder="Ex.: Avenida Brasil"/>
-                        <label class="endereco" for="Numero">Número :</label>
-                        <label class="endereco" for="CEP">CEP :</label><br>
-                        <input id="numero" name="Numero" type="text" placeholder="ex. 282"/>
-                        <input id="CEP" name="CEP" type="text" placeholder="ex. 65630000"/>
+                        <fieldset class="fieldset-sex">
+                            <label for="Sexo">Sexo:</label><br>
+                            <fieldset class="option-sex">
+                                <input class="Sexo" name="Sexo" value="Masculino" type="radio" />
+                                <label class="Sexo" for="Sexo">Masculino</label>
+                                <input class="Sexo" name="Sexo" value="Feminino" type="radio" />
+                                <label class="Sexo" for="Sexo">Feminino</label>
+                            </fieldset>
+                        </fieldset>
 
-                        <label for="Convenio">Convênio:</label>
-                        <input class="texto" name="Convenio" type="text" placeholder="Digite seu convênio aqui"/>
+                        <fieldset class="fieldset-endereco">
+                            <label for="Endereço">Endereço:</label>
+                            <label for="Rua">Rua:</label>
+                            <input class="texto" name="Rua" type="text" placeholder="Ex.: Avenida Brasil"/>
+                            <label class="endereco" for="Numero">Número :</label>
+                            <label class="endereco" for="CEP">CEP :</label>
+                            <fieldset class="fieldset-numero-cep">
+                                <input id="numero" name="Numero" type="text" placeholder="ex. 282"/>
+                                <input id="CEP" name="CEP" type="text" placeholder="ex. 65630000"/>
+                            </fieldset>
+                        </fieldset>
 
-                        <label for="email">Email:</label>
-                        <input class="texto" name="email" type="email" placeholder="exemplo@dominio.com"/>
+                        <fieldset>
+                            <label for="Convenio">Convênio:</label>
+                            <input class="texto" name="Convenio" type="text" placeholder="Digite seu convênio aqui"/>
+                        </fieldset>
 
-                        <label for="senha">Senha:</label>
-                        <input class="texto" name="senha" type="password" placeholder="Digite sua senha aqui"/>
+                        <fieldset>
+                            <label for="email">Email:</label>
+                            <input class="texto" name="email" type="email" placeholder="exemplo@dominio.com"/>
+                        </fieldset>
 
-                        <label for="senha">Confirmar senha:</label>
-                        <input class="texto" name="senha" type="password" placeholder="Digite sua senha novamente"/>
+                        <fieldset>
+                            <label for="senha">Senha:</label>
+                            <input class="texto" name="senha" type="password" placeholder="Digite sua senha aqui"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="senha">Confirmar senha:</label>
+                            <input class="texto" name="senha" type="password" placeholder="Digite sua senha novamente"/>
+                        </fieldset>
 
                         <div class="container-buttons">
                             <!-- <a class="botao botao-cancelar" href="./LoginPaciente.html">Cancelar</a> -->
