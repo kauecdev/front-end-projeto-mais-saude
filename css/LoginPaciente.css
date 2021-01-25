@@ -78,7 +78,7 @@ main > a i {
 }
 
 main section#home-body form#home-form{
-    margin-top: 1.25%;
+    margin: 40px 0;
 
     min-height: 500px;
     min-width: 350px;
@@ -89,7 +89,7 @@ main section#home-body form#home-form{
     align-items: center;
     flex-direction: column;
 
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 
     width: 30%;
     height: 50%;
