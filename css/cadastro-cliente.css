@@ -4,8 +4,8 @@
     background-color: #FFFFFF;
     font-family: Nunito;
     font-style: normal;
+    outline: 0;
 }
-
 
 input:focus {
     outline: 0;

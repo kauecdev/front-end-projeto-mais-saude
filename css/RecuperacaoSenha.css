@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
+    outline: 0;
 }
 
 input:focus {
@@ -65,13 +66,16 @@ main section#home-body{
     position: relative;
 }
 
-main section#home-body  > a {
+main section#home-body > button {
     position: absolute;
     top: 40px;
     left: 50px;
+    background-color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
 }
 
-main section#home-body > a i {
+main section#home-body > button i {
     color: #DF1F1F;
     font-size: 40px;
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
+    outline: 0;
 }
 
 
@@ -117,11 +118,11 @@ main section#home-body form#home-form div#form-body_inp_lab label{
     padding: 1.25%;
 }
 
-main section#home-body form#home-form div#form-body_inp_lab label.forgot-password {
-    cursor: pointer;
+main section#home-body form#home-form div#form-body_inp_lab a.forgot-password {
+    text-decoration: none;
 }
 
-main section#home-body form#home-form div#form-body_inp_lab label.forgot-password:hover {
+main section#home-body form#home-form div#form-body_inp_lab a.forgot-password:hover {
     text-decoration: underline;
 }
 

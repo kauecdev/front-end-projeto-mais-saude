@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
+    outline: 0;
 }
 
 input:focus {
