@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Nunito;
+    font-style: normal;
+    outline: 0;
+}
+
+#topo{
+    background-color: #0AA06E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topo a {
+    width: 16%;
+    height: 16%;
+
+    padding-left: 20px;
+    background-color: #0AA06E;
+}
+
+#topo a img{
+    width: 100%;
+    height: 100%;
+}
+
+#topo img#menu-user-dropdown {
+    width: 40px;
+    height: 40px;
+    padding: 0 20px 0 30px;
+    background-color: #0AA06E;
+    cursor: pointer;
+}
+
+#topo #perfil{
+    width: 80%;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    background-color: #0AA06E;
+}
+
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #FFFFFF;
+    padding-bottom: 0px;
+}
+
+#textoDeEntrada {
+    width: 60%;
+    padding: 20px 0 5% 3%;
+    text-align: left;
+    color: #32A492;
+    display: inline-block;
+}
+
+#textoDeEntrada h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+#textoDeEntrada h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+.corpo{
+    z-index: 3;
+    position: relative;
+    width: 30%;
+    top: 0;
+    padding: 40px 2%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    background-color:#3EA582;
+    transition: box-shadow 0.4s;
+}
+
+#waves-background {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.corpo:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.corpo .botoes {
+    padding: 20px 0px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#3EA582;
+}
+
+.corpo .botoes h3{
+    font-size: 39px;
+    line-height: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color:#3EA582;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+}
+
+.corpo .botoes img{
+    width: 40%;
+    background-color:#3EA582;
+}
+
+#rodape{
+    width: 100%;
+    text-align: right;
+    background-color: #E96464;
+    opacity: 0.83;
+}
+
+#rodape h2{
+    padding: 40px 5px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 44px;
+    color: #ffffff;
+    background-color: #E96464;
+}
+
+
+
