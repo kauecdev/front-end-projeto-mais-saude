@@ -36,16 +36,16 @@
             <div id="corpo">
                 <div id="campo-cadastro">
                     <h1>Crie sua conta gratuita!</h1>
-                    <form action="">
+                    <form action="" id="form-cadastro">
 
                         <fieldset>
                             <label for="nome">Nome Completo:</label>
-                            <input class="texto" name="nome" type="text" placeholder="Digite seu nome aqui"/>
+                            <input id="form-nome" class="texto" name="nome" type="text" placeholder="Digite seu nome aqui"/>
                         </fieldset>
 
                         <fieldset>
                             <label for="CPF">CPF:</label>
-                            <input class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
+                            <input id="form-cpf" class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
                         </fieldset>
 
                         <fieldset>
@@ -56,7 +56,7 @@
                         <fieldset class="fieldset-sex">
                             <label for="Sexo">Sexo:</label><br>
                             <fieldset class="option-sex">
-                                <input class="Sexo" name="Sexo" value="Masculino" type="radio" />
+                                <input checked class="Sexo" name="Sexo" value="Masculino" type="radio" />
                                 <label class="Sexo" for="Sexo">Masculino</label>
                                 <input class="Sexo" name="Sexo" value="Feminino" type="radio" />
                                 <label class="Sexo" for="Sexo">Feminino</label>
@@ -66,38 +66,39 @@
                         <fieldset class="fieldset-endereco">
                             <label for="Endereço">Endereço:</label>
                             <label for="Rua">Rua:</label>
-                            <input class="texto" name="Rua" type="text" placeholder="Ex.: Avenida Brasil"/>
+                            <input id="form-rua" class="texto" name="Rua" type="text" placeholder="Ex.: Avenida Brasil"/>
                             <label class="endereco" for="Numero">Número :</label>
                             <label class="endereco" for="CEP">CEP :</label>
                             <fieldset class="fieldset-numero-cep">
                                 <input id="numero" name="Numero" type="text" placeholder="ex. 282"/>
                                 <input id="CEP" name="CEP" type="text" placeholder="ex. 65630000"/>
                             </fieldset>
-                            <label for="municipio">Município:</label>
-                            <input class="texto" name="municipio" type="text" placeholder="Digite seu município aqui"/>
-                            <label for="uf">UF:</label>
-                            <input class="texto" name="uf" type="text" placeholder="Digite sua UF aqui"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="Convenio">Convênio:</label>
+                            <input id="convenio" class="texto" name="Convenio" type="text" placeholder="Digite seu convênio aqui"/>
                         </fieldset>
 
                         <fieldset>
                             <label for="email">Email:</label>
-                            <input class="texto" name="email" type="email" placeholder="exemplo@dominio.com"/>
+                            <input id="email" class="texto" name="email" type="email" placeholder="exemplo@dominio.com"/>
                         </fieldset>
 
                         <fieldset>
                             <label for="senha">Senha:</label>
-                            <input class="texto" name="senha" type="password" placeholder="Digite sua senha aqui"/>
+                            <input id="senha1"class="texto" name="senha" type="password" placeholder="Digite sua senha aqui"/>
                         </fieldset>
 
                         <fieldset>
                             <label for="senha">Confirmar senha:</label>
-                            <input class="texto" name="senha" type="password" placeholder="Digite sua senha novamente"/>
+                            <input id="senha2" class="texto" name="senha" type="password" placeholder="Digite sua senha novamente"/>
                         </fieldset>
 
                         <div class="container-buttons">
                             <!-- <a class="botao botao-cancelar" href="./LoginPaciente.html">Cancelar</a> -->
                             <input type="button" value="Cancelar" class="botao botao-cancelar" onclick="history.go(-1)"/>
-                            <button class="botao botao-cadastrar" type="submit">Cadastrar</button>
+                            <button id="btn" class="botao botao-cadastrar" type="submit">Cadastrar</button>
                         </div>
                     </form> 
                 
