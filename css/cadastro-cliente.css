@@ -163,7 +163,7 @@ input:focus {
     border: none;
 }
 
-#campo-cadastro form #CEP{
+#campo-cadastro form #cep{
     padding: 7.5px;
     margin: 10px 20px 10px 0px;
     border-radius: 7.5px;
@@ -174,7 +174,7 @@ input:focus {
 }
 
 
-#campo-cadastro form #DataNasc{
+#campo-cadastro form #data_nascimento{
     padding: 7.5px;
     margin: 10px 0 10px 0;
     border-radius: 7.5px;

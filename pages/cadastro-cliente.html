@@ -45,39 +45,53 @@
 
                         <fieldset>
                             <label for="CPF">CPF:</label>
-                            <input id="form-cpf" class="texto" name="CPF" type="text" placeholder="Digite somente os números"/>
+                            <input id="form-cpf" class="texto" name="cpf" type="text" placeholder="Digite somente os números" onkeypress="$(this).mask('000.000.000-00')"/>
                         </fieldset>
 
                         <fieldset>
-                            <label for="DataNasc">Data de Nascimento:</label>
-                            <input id="DataNasc" name="DataNasc" type="date"/>
+                            <label for="celular">Celular:</label>
+                            <input id="celular" class="texto" name="celular" type="text" placeholder="Digite seu celular aqui" onkeypress="$(this).mask('(00) 00000-0000')"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="data_nascimento">Data de Nascimento:</label>
+                            <input id="data_nascimento" name="data_nascimento" type="date"/>
                         </fieldset>
 
                         <fieldset class="fieldset-sex">
                             <label for="Sexo">Sexo:</label><br>
                             <fieldset class="option-sex">
-                                <input checked class="Sexo" name="Sexo" value="Masculino" type="radio" />
+                                <input class="Sexo" name="sexo" id="sexo_masculino" value="Masculino" type="radio" />
                                 <label class="Sexo" for="Sexo">Masculino</label>
-                                <input class="Sexo" name="Sexo" value="Feminino" type="radio" />
+                                <input class="Sexo" name="sexo" value="Feminino" type="radio" />
                                 <label class="Sexo" for="Sexo">Feminino</label>
                             </fieldset>
                         </fieldset>
 
                         <fieldset class="fieldset-endereco">
                             <label for="Endereço">Endereço:</label>
-                            <label for="Rua">Rua:</label>
-                            <input id="form-rua" class="texto" name="Rua" type="text" placeholder="Ex.: Avenida Brasil"/>
-                            <label class="endereco" for="Numero">Número :</label>
-                            <label class="endereco" for="CEP">CEP :</label>
+                            <label for="logradouro">Logradouro:</label>
+                            <input id="form-logradouro" class="texto" name="logradouro" type="text" placeholder="Ex.: Avenida Brasil"/>
+                            <label for="bairro">Bairro:</label>
+                            <input id="form-bairro" class="texto" name="bairro" type="text" placeholder="Ex.: Centro"/>
+                            <label class="endereco" for="numero">Número :</label>
+                            <label class="endereco" for="cep">CEP :</label>
                             <fieldset class="fieldset-numero-cep">
-                                <input id="numero" name="Numero" type="text" placeholder="ex. 282"/>
-                                <input id="CEP" name="CEP" type="text" placeholder="ex. 65630000"/>
+                                <input id="numero" name="numero" type="text" placeholder="ex. 282"/>
+                                <input id="cep" name="cep" type="text" placeholder="ex. 65630000" onkeypress="$(this).mask('00000-000')"/>
                             </fieldset>
+                            <label for="complemento">Complemento:</label>
+                            <input id="form-complemento" class="texto" name="complemento" type="text" placeholder="Ex.: Apartamento"/>
                         </fieldset>
 
                         <fieldset>
-                            <label for="Convenio">Convênio:</label>
-                            <input id="convenio" class="texto" name="Convenio" type="text" placeholder="Digite seu convênio aqui"/>
+                            <label for="cidade">Cidade:</label>
+                            <input id="cidade" class="texto" name="cidade" type="text" placeholder="Digite sua cidade aqui"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="uf">Estado:</label>
+                            <input id="uf" class="texto" name="uf" type="text" placeholder="Digite seu estado aqui"/>
                         </fieldset>
 
                         <fieldset>
@@ -96,7 +110,6 @@
                         </fieldset>
 
                         <div class="container-buttons">
-                            <!-- <a class="botao botao-cancelar" href="./LoginPaciente.html">Cancelar</a> -->
                             <input type="button" value="Cancelar" class="botao botao-cancelar" onclick="history.go(-1)"/>
                             <button id="btn" class="botao botao-cadastrar" type="submit">Cadastrar</button>
                         </div>
@@ -119,6 +132,8 @@
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
         <script src="../js/modal.js"></script>
         
     </body>
