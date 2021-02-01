@@ -16,6 +16,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    min-height: 100vh;
     justify-content: center;
 
 }
